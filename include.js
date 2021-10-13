@@ -5,17 +5,17 @@ function ValidateEmail(email) {
 
 $(function() {
 
-    var childs = $('.input-group-append').children().children();
-    // for (let index = 0; index < childs['length']; index++) {
-    //     console.log(childs[index]);
-    // }
-    $.each(childs, function(indexInArray, valueOfElement) {
-        console.log(valueOfElement);
-    });
+//     var childs = $('.input-group-append').children().children();
+//     // for (let index = 0; index < childs['length']; index++) {
+//     //     console.log(childs[index]);
+//     // }
+//     $.each(childs, function(indexInArray, valueOfElement) {
+//         console.log(valueOfElement);
+//     });
 
     $('#login').keyup(function(e) {
         if ($(this).val() == '') {
-            $('#log').attr('class', 'input-group-text bg-secondary');
+            $('#log').attr('class', 'input-group-text glass');
             $('#log i').attr('class', 'fa fa-sad-tear text-white');
             $(this).css('border-color', '');
             return;
@@ -34,7 +34,7 @@ $(function() {
     });
     $('#password').keyup(function(e) {
         if ($(this).val().length < 8) {
-            $('#pwd').attr('class', 'input-group-text bg-secondary');
+            $('#pwd').attr('class', 'input-group-text glass');
             $('#pwd i').attr('class', 'fa fa-sad-tear text-white');
             $(this).css('border-color', '');
             return;
